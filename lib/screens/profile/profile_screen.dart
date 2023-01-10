@@ -13,23 +13,6 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    /*
-    ------------------------
-    https://capekngoding.com
-    ------------------------
-    Starring:
-    Name: Deny Ocr
-    Github: https://www.youtube.com/c/CapekNgoding
-    ------------------------
-    -
-    ------------------------
-    Code generation with snippets can be a good solution for you or it can kill you.
-    A basic understanding of Dart and Flutter is required.
-    Keep it in mind, Our snippet can't generate many files yet.
-    So, all of our snippets are put in one file which is not best practice.
-    You need to do the optimization yourself, and at least you are familiar with using Flutter.
-    ------------------------
-    */
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
@@ -67,7 +50,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     height: 20.0,
                   ),
                   Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       const CircleAvatar(
                         radius: 50.0,
