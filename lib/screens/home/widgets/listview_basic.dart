@@ -46,7 +46,7 @@ class PodcastItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ConstrainedBox(
-      constraints: BoxConstraints(maxWidth: 135),
+      constraints: BoxConstraints(maxWidth: 150),
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 10),
         child: Column(
@@ -59,7 +59,7 @@ class PodcastItem extends StatelessWidget {
                   Image.asset(
                     imgPodcast,
                     width: 130,
-                    height: 110,
+                    height: 130,
                     fit: BoxFit.cover,
                   ),
                 ],
@@ -84,7 +84,7 @@ class PodcastItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(accountName.toString()),
-                Text(durationPodcast.toString() + "menit"),
+                Text(durationPodcast.toString() + " menit"),
               ],
             ),
           ],

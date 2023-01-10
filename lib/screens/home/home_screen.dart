@@ -1,10 +1,9 @@
-// ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables
-
 import 'package:assignment7_noice_app/screens/home/tabs/audiobook_tab.dart';
 import 'package:assignment7_noice_app/screens/home/tabs/audioseries_tab.dart';
 import 'package:assignment7_noice_app/screens/home/tabs/buatkamu_tab.dart';
 import 'package:assignment7_noice_app/screens/home/tabs/podcast_tab.dart';
 import 'package:assignment7_noice_app/screens/home/tabs/radio_tab.dart';
+import 'package:assignment7_noice_app/screens/home/widgets/searchbar_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -32,11 +31,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   floating: true,
                   snap: true,
                   centerTitle: true,
-                  leading: Image.asset(
-                    "assets/images/logo.jpg",
-                    width: 64.0,
-                    height: 64.0,
-                    fit: BoxFit.fill,
+                  leading: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage(
+                        "assets/images/logo.jpg",
+                      ),
+                    ),
                   ),
                   title: SearchBar(),
                   actions: [
@@ -80,56 +81,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class SearchBar extends StatelessWidget {
-  const SearchBar({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 12.0,
-      ),
-      decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(
-          Radius.circular(12.0),
-        ),
-        border: Border.all(
-          width: 1.0,
-          color: Colors.grey[400]!,
-        ),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: TextFormField(
-              initialValue: null,
-              decoration: const InputDecoration.collapsed(
-                filled: true,
-                fillColor: Colors.transparent,
-                hintText: "Search",
-                hoverColor: Colors.transparent,
-              ),
-              onFieldSubmitted: (value) {},
-            ),
-          ),
-          InkWell(
-            onTap: () {},
-            child: const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Icon(
-                Icons.search,
-                size: 20.0,
-              ),
-            ),
-          ),
-        ],
       ),
     );
   }

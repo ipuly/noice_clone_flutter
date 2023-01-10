@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class SectionTitle extends StatelessWidget {
+class SectionTitleArrow extends StatelessWidget {
   final String title;
-  const SectionTitle({Key? key, required this.title}) : super(key: key);
+  const SectionTitleArrow({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +20,15 @@ class SectionTitle extends StatelessWidget {
               ),
             ),
           ),
+          InkWell(
+            onTap: () {},
+            child: Container(
+              child: Icon(
+                Icons.arrow_right,
+                size: 15,
+              ),
+            ),
+          )
         ],
       ),
     );

@@ -4,6 +4,9 @@ class MyTheme {
   static final darkTheme = ThemeData(
     scaffoldBackgroundColor: Colors.black,
     primaryColor: Colors.black,
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Colors.yellow,
+    ),
     colorScheme: ColorScheme.dark(
       onBackground: Colors.black,
     ),
@@ -12,6 +15,11 @@ class MyTheme {
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
     primaryColor: Colors.white,
-    colorScheme: ColorScheme.light(),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Colors.yellow,
+    ),
+    colorScheme: ColorScheme.light(
+      onBackground: Colors.white,
+    ),
   );
 }

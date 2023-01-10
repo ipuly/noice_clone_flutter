@@ -44,11 +44,24 @@ class _CarouselImageState extends State<CarouselImage> {
           items: cardList.map((card) {
             return Builder(builder: (BuildContext context) {
               return Container(
+                decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(20.0),
+                  ),
+                ),
                 height: MediaQuery.of(context).size.height * 0.30,
                 width: MediaQuery.of(context).size.width,
-                child: Card(
-                  color: Colors.blueAccent,
-                  child: card,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(20.0),
+                    ),
+                  ),
+                  child: Card(
+                    color: Colors.transparent,
+                    // color: Colors.blueAccent,
+                    child: card,
+                  ),
                 ),
               );
             });
@@ -79,22 +92,13 @@ class Item1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.yellow,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(20.0),
+        ),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text("Data",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold)),
-          Text("Data",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 17.0,
-                  fontWeight: FontWeight.w600)),
-        ],
+      child: Image.asset(
+        "assets/images/carousel_1.png",
+        fit: BoxFit.fill,
       ),
     );
   }
@@ -106,22 +110,13 @@ class Item2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.yellow,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(20.0),
+        ),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text("Data",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold)),
-          Text("Data",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 17.0,
-                  fontWeight: FontWeight.w600)),
-        ],
+      child: Image.asset(
+        "assets/images/carousel_2.png",
+        fit: BoxFit.fill,
       ),
     );
   }
@@ -133,19 +128,13 @@ class Item3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.yellow,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(20.0),
+        ),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          // Image.network(_loremPicsum.getImage(200, 200)),
-          Image.asset(
-            'assets/images/logo.jpg',
-            height: 180.0,
-            width: 300,
-            fit: BoxFit.fitWidth,
-          )
-        ],
+      child: Image.asset(
+        "assets/images/carousel_3.png",
+        fit: BoxFit.fill,
       ),
     );
   }
@@ -157,22 +146,13 @@ class Item4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.yellow,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(20.0),
+        ),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text("Data",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold)),
-          Text("Data",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 17.0,
-                  fontWeight: FontWeight.w600)),
-        ],
+      child: Image.asset(
+        "assets/images/carousel_4.png",
+        fit: BoxFit.fill,
       ),
     );
   }

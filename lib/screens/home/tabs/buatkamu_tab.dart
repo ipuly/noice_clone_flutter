@@ -6,6 +6,7 @@ import 'package:assignment7_noice_app/screens/home/widgets/listview_basic.dart';
 import 'package:assignment7_noice_app/screens/home/widgets/listview_circle.dart';
 import 'package:assignment7_noice_app/screens/home/widgets/listview_rectangle.dart';
 import 'package:assignment7_noice_app/screens/home/widgets/section_title.dart';
+import 'package:assignment7_noice_app/screens/home/widgets/section_title_arrow.dart';
 import 'package:flutter/material.dart';
 
 class BuatKamuTab extends StatefulWidget {
@@ -28,7 +29,7 @@ class _BuatKamuTabState extends State<BuatKamuTab> {
               const SizedBox(
                 height: 15.0,
               ),
-              SectionTitle(title: "Noice Clips"),
+              SectionTitleArrow(title: "Noice Clips"),
               const SizedBox(
                 height: 15.0,
               ),
@@ -36,7 +37,7 @@ class _BuatKamuTabState extends State<BuatKamuTab> {
               const SizedBox(
                 height: 15.0,
               ),
-              SectionTitle(title: "Episode Baru"),
+              SectionTitleArrow(title: "Episode Baru"),
               const SizedBox(
                 height: 15.0,
               ),
@@ -44,23 +45,15 @@ class _BuatKamuTabState extends State<BuatKamuTab> {
               const SizedBox(
                 height: 15.0,
               ),
-              SectionTitle(title: "20 Podcast Cinta"),
+              SectionTitleArrow(title: "Top Episode"),
               const SizedBox(
                 height: 15.0,
               ),
-              ListViewRectangle(podcastData: PodcastData.playlistPodcast),
+              ListViewRectangle(podcastData: PodcastData.rectanglePodcast),
               const SizedBox(
                 height: 15.0,
               ),
-              SectionTitle(title: "Top Episode"),
-              const SizedBox(
-                height: 15.0,
-              ),
-              ListViewRounded(podcastData: PodcastData.playlistPodcast),
-              const SizedBox(
-                height: 15.0,
-              ),
-              SectionTitle(title: "New Year, New You"),
+              SectionTitleArrow(title: "New Year, New You"),
               const SizedBox(
                 height: 15.0,
               ),
@@ -68,7 +61,7 @@ class _BuatKamuTabState extends State<BuatKamuTab> {
               const SizedBox(
                 height: 15.0,
               ),
-              SectionTitle(title: "Audio Series Terbaru"),
+              SectionTitleArrow(title: "Audio Series Terbaru"),
               const SizedBox(
                 height: 15.0,
               ),
@@ -76,23 +69,7 @@ class _BuatKamuTabState extends State<BuatKamuTab> {
               const SizedBox(
                 height: 15.0,
               ),
-              SectionTitle(title: "Playlist Untuk Kamu"),
-              const SizedBox(
-                height: 15.0,
-              ),
-              ListViewRounded(podcastData: PodcastData.playlistPodcast),
-              const SizedBox(
-                height: 15.0,
-              ),
-              SectionTitle(title: "Noice Live"),
-              const SizedBox(
-                height: 15.0,
-              ),
-              ListViewRounded(podcastData: PodcastData.playlistPodcast),
-              const SizedBox(
-                height: 15.0,
-              ),
-              SectionTitle(title: "Top Radio"),
+              SectionTitleArrow(title: "Noice Live"),
               const SizedBox(
                 height: 15.0,
               ),
